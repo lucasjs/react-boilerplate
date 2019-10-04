@@ -1,0 +1,38 @@
+{
+  "env": {
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+        "jsx": true
+    }
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "max-params": ["error", { "max": 5 }],
+    "comma-dangle": ["error", "never"],
+    "function-paren-newline": ["error", "multiline"],
+    "max-len": [ "error",
+      {
+        "code": 80,
+        "tabWidth": 2,
+        "ignoreComments": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "quotes": [ "error", "single",
+      {
+        "allowTemplateLiterals": true,
+        "avoidEscape": true
+      }
+    ]
+  }
+}

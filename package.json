@@ -1,0 +1,62 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --compress --open --mode development --hot",
+    "build": "webpack --mode production",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasjs/react-boilerplate.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Lucas JS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasjs/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/lucasjs/react-boilerplate#readme",
+  "dependencies": {
+    "@hot-loader/react-dom": "^16.8.6",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.12.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-a11y": "^5.2.1",
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-backgrounds": "^5.2.1",
+    "@storybook/addons": "^5.1.11",
+    "@storybook/react": "^5.2.1",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.5.1",
+    "eslint-loader": "^3.0.2",
+    "file-loader": "^4.2.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "style-loader": "^1.0.0",
+    "stylelint": "^11.0.0",
+    "stylelint-order": "^3.1.1",
+    "stylelint-webpack-plugin": "^1.0.1",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
