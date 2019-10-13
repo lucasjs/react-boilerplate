@@ -1,9 +1,14 @@
 const path = require('path')
-const postcssPresetEnv = require('postcss-preset-env')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const StylelintPlugin = require('stylelint-webpack-plugin')
+const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = {
   plugins: [
+    // HTML
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'public/index.html')
+    }),
     // stylelint
     new StylelintPlugin({
       configFile: '.stylelintrc',
@@ -88,7 +93,11 @@ module.exports = {
   resolve: {
     alias: {
       'react-dom': '@hot-loader/react-dom'
-    }
+    },
+    modules: [
+      path.resolve(__dirname + '/src'),
+      path.resolve(__dirname + '/node_modules')
+    ]
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),

@@ -1,7 +1,7 @@
 import React, { Component, useState } from 'react'
 import { hot } from 'react-hot-loader/root'
 import styles from './App.css'
-import Button from './components/Button'
+import Button from 'components/Button'
 
 const App = () => {
   const [name] = useState('Lucas')

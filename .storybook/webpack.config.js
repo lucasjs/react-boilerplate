@@ -6,6 +6,10 @@ module.exports = async ({ config, mode }) => {
     module: {
       ...config.module,
       rules: custom.module.rules
+    },
+    resolve: {
+      ...config.resolve,
+      modules: custom.resolve.modules
     }
   }
 }
